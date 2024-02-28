@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+}
+
 body {
     margin: 0px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.897);
 }
 
 header {
@@ -18,18 +24,33 @@ h2 {
 h3 {
     font-size: 1em;
 }
-header nav, ul, li {
+
+/* .icone{
+    position: relative;
+    float: left;
+    margin-right: 50em;
+    height: 3rem;
+} */
+
+header nav, ul, li{
     display: flex;
-    margin-right: 30px;
+    margin-right: 1.5rem;
     list-style: none;
     font-family: monospace;
     color: white;    
-    font-size: 1rem;
     font-weight: bold;
 }
 
+li a {
+    font-size: 1.1rem;
+}
+
+.icone {
+    display: flex;
+    justify-content: center;
+}
 .sessoes {
-    margin-left: 20px;
+    margin-left: 15rem;
 }
 
 .img_main {
@@ -56,10 +77,15 @@ a:hover {
     color: rgb(85, 204, 85);
 }
 
+.tec div{
+    display: inline-block;
+    text-align: center;
+}
 .tec ul {
     display: grid;
-    grid-template-columns: 5em 5em 5em;
-    grid-template-rows: 5em;
+    grid-template-columns: 5em 5em;
+    grid-template-rows: 5em  5em 5em;
+    margin-left: 2em;
 }
 
 .tec h3  {
@@ -71,7 +97,7 @@ li img {
     height: 2.5rem;
 }
 
-#about .about_me {
+.about_me {
     display: inline-block;
     width: 25rem;
     height: 10rem;
