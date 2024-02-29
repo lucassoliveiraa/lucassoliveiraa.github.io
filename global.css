@@ -6,7 +6,8 @@
 
 body {
     margin: 0px;
-    background-color: rgba(0, 0, 0, 0.897);
+    /* background-color: rgba(0, 0, 0, 0.897); */
+    background-color: floralwhite;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
 }
 
 h1, h2, h3, p {
-    color: white;
+    color: black;
 }
 h2 {
     font-size: 1.8rem;
@@ -37,12 +38,16 @@ header nav, ul, li{
     margin-right: 1.5rem;
     list-style: none;
     font-family: monospace;
-    color: white;    
+    color: black;    
     font-weight: bold;
 }
 
 li a {
     font-size: 1.1rem;
+}
+
+li a:hover {
+    margin-left: 2px;
 }
 
 .icone {
@@ -70,11 +75,11 @@ a {
 }
 
 a:visited {
-    color: white;
+    color: black;
 }
 
 a:hover {
-    color: rgb(85, 204, 85);
+    color: #55cc55;
 }
 
 .tec div{
