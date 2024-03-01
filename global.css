@@ -8,17 +8,9 @@ body {
     margin: 0px;
     /* background-color: rgba(0, 0, 0, 0.897); */
     background-color: floralwhite;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-h1, h2, h3, p {
     color: black;
 }
+
 h2 {
     font-size: 1.8rem;
 }
@@ -26,14 +18,48 @@ h3 {
     font-size: 1em;
 }
 
-/* .icone{
-    position: relative;
-    float: left;
-    margin-right: 50em;
-    height: 3rem;
-} */
+header {
+    position: fixed;
+    top: 10rem;
+    right: 0;
+    height: 100%;
+}
 
-header nav, ul, li{
+.icone {
+    position: fixed;
+    top: 0;
+    left: 91dvw;
+}
+
+.icone img {
+    height: 4rem;
+    width: 3rem;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin-top: 2rem;
+    margin-right: 1.2rem;
+}
+
+.menu li a:hover {
+    margin-right: 1px;
+}
+
+.about_me {
+    display: inline-block;
+    width: 25rem;
+    height: 10rem;
+}
+
+.sessoes {
+    margin-left: 22dvw;
+}
+
+.tec ul, .tec li, .lista_contato ul, .lista_contato li{
     display: flex;
     margin-right: 1.5rem;
     list-style: none;
@@ -48,14 +74,6 @@ li a {
 
 li a:hover {
     margin-left: 2px;
-}
-
-.icone {
-    display: flex;
-    justify-content: center;
-}
-.sessoes {
-    margin-left: 15rem;
 }
 
 .img_main {
@@ -88,8 +106,8 @@ a:hover {
 }
 .tec ul {
     display: grid;
-    grid-template-columns: 5em 5em;
-    grid-template-rows: 5em  5em 5em;
+    grid-template-columns: 5em 5em 5em;
+    grid-template-rows: 5em 5em;
     margin-left: 2em;
 }
 
@@ -97,15 +115,10 @@ a:hover {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
+
 li img {
     width: 2.5rem;
     height: 2.5rem;
-}
-
-.about_me {
-    display: inline-block;
-    width: 25rem;
-    height: 10rem;
 }
 
 footer {
