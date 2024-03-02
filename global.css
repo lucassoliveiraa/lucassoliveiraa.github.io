@@ -100,14 +100,20 @@ a:hover {
     color: #55cc55;
 }
 
-.tec div{
-    display: inline-block;
+.tec{
+    /* display: inline-block;
+    text-align: center; */
+    display: grid;
+    grid-template-columns: 23dvw 23dvw;
+    grid-gap: 5px;
+}
+
+.tec div {
     text-align: center;
 }
 .tec ul {
     display: grid;
     grid-template-columns: 5em 5em 5em;
-    grid-template-rows: 5em 5em;
     margin-left: 2em;
 }
 
