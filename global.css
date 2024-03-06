@@ -7,7 +7,7 @@
 
 body {
     margin: 0px;
-    background-color: black;
+    background-color: whitesmoke;
     /* background-color: floralwhite; */
     color: black;
 }
@@ -56,20 +56,24 @@ header .menu li a {
     color: tomato;
 }
 
-.menu li button {
-    display: flex;
-    flex-direction: column;
-    background-color: tomato;
-    color: black;
-    width: 5rem;
-    height: 1.2rem;
+header .menu_button {
+    border: 2px solid tomato;
+    width: 7rem;
+    padding: 4px;
+    justify-items: center;
     align-items: center;
+    text-align: center;
+}
+
+.menu_button a {
+    font-size: 1rem;
 }
 
 .sessoes {
     margin-left: 18dvw;
 }
 
+/* Home */
 #home div {
     display: flex;
     flex-grow: 2rem;
@@ -93,7 +97,6 @@ header .menu li a {
     height: 10rem;
 }
 
-
 .about .tec ul, 
 .tec li, 
 .lista_contato ul, 
@@ -105,8 +108,6 @@ header .menu li a {
     font-family: monospace;
     font-weight: bold;
 }
-
-
 
 li a {
     font-size: 1.3rem;
@@ -132,7 +133,6 @@ a:visited {
     color: black;
 }
 
-
 .tec{
     /* display: inline-block;
     text-align: center; */
@@ -146,7 +146,7 @@ a:visited {
 .tec ul {
     display: grid;
     grid-template-columns: 5em 5em 5em;
-    margin-left: 2em;
+    margin-left: 0.6rem;
 }
 
 .tec h3  {
@@ -159,9 +159,30 @@ li img {
     height: 2.5rem;
 }
 
+
+/* Experiencia */
 #experiencia div {
     width: 60dvw;
 }
+
+#experiencia ul {
+    border-right: solid 1px black;
+}
+
+#experiencia li {
+    margin-bottom: 6dvh;
+    list-style: none;
+    text-align: justify;
+    padding-right: 16px;
+}
+
+#experiecia h3 {
+    margin-bottom: 0;
+}
+
+/* Footer */
 footer {
+    display: block;
+    text-align: center;
     color: white;
 }
