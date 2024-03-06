@@ -1,0 +1,8 @@
+#home div {
+    display: flex;
+    flex-grow: 2rem;
+}
+#home .myNameText {
+    font-size: 4rem;
+}
+

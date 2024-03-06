@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="global.css">
-    
 </head>
 <body>
     <header>
-
         <div class="icone">
             <a href="#home">
                 <img src="/icons/goblet-eucharist-svgrepo-com.svg" alt="shields">
@@ -18,29 +16,30 @@
 
         <nav class="menu">
             <ul>
-                <li><a href="#sobre_mim"> < sobre mim ></sobre></a></li>
+                <li><a href="paginas/about.html"> < sobre mim ></sobre></a></li>
                 <li><a href="#experiencia"> < experiência ></a></li>
                 <li><a href="#contato"> < contato ></a></li>
                 <li>
                     <div class="menu_button">
-                        <button>CV</button>
+                        C.V
                     </div>
-                    
                 </li>
             </ul>
         </nav>
     </header> 
 
-    <section class = "img_main">
-        <img src="eden-03.webp" alt="foto">
-    </section>
+    
 
     <div class="sessoes">
 
+        
         <section id="home">
-            <div style="background-color: rgba(128, 128, 128, 0.048);" class="myName">
-                <h1 class="myName-text" id = "nome "onload="textoLegal()"></h1>
-                <script src="app.js" onload="textoLegal()"></script>
+            <div>
+                <div class = "img_main">
+                    <img src="eden-03.webp" alt="foto">
+                </div>
+                <h1 class="myNameText"></h1>
+                <h2 class="myJobText"></h2>
             </div>
         </section>
 
@@ -122,7 +121,7 @@
                     </ul>
                 </div>
 
-                <div class="outras">
+                <div class="others">
                     <h3>Outras: </h3>
                     <ul>
                         <li>
@@ -144,18 +143,23 @@
             
         <section id="experiencia">
             <h2> < experiência > ...</experi></h2>
-            <p>textotexto</p>
             <div>
                 <ul>
                     <li>
-                        Monitor de Linguagem de Programação 1
+                        <h3>Monitor de Linguagem de Programação 1</h3>
                         <span>fev - 2023 até jul - 2023</span>
-                        <p>Texto falando o que fiz</p>
+                        <p>Auxílio no aprendizado de conceitos de linguagens de programação e seus paradigmas 
+                            (imperativo, funcional, lógico e orientado a objetos).
+                        </p>
                     </li>
                     <li>
-                        Engenheiro de software voluntário (IFBAIANO)
+                        <h3>Engenheiro de software voluntário (IFBAIANO)</h3>
                         <span>set - 2022 até jul - 2023</span>
-                        <p>Texto falando o que fiz</p>
+                        <p>
+                            Atuei no desenvolvimento de um sistema que tinha como objetivo gerenciar a repografia 
+                            da instituição.Também participei da modelagem de uma aplicação web/mobile para 
+                            auxiliar os catadores de recicláveis da cidade de Itapetinga-BA
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -193,5 +197,6 @@
     <footer>
         <p>&lucas</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>

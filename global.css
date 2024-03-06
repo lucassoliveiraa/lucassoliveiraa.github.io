@@ -2,90 +2,125 @@
 
 * {
     font-family: "Josefin Sans", sans-serif;
+    color: tomato;
 }
 
 body {
     margin: 0px;
-    /* background-color: rgba(0, 0, 0, 0.897); */
-    background-color: floralwhite;
+    background-color: black;
+    /* background-color: floralwhite; */
     color: black;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 h3 {
-    font-size: 1em;
+    font-size: 1.2rem;
 }
 
+p {
+    font-size: 1.2rem;
+}
+
+/*Header*/ 
 header {
     position: fixed;
+    box-sizing: border-box;
     top: 10rem;
     right: 0;
     height: 100%;
 }
 
-.icone {
+header .icone {
     position: fixed;
     top: 0;
-    left: 91dvw;
+    left: 90dvw;
 }
 
-.icone img {
+header .icone img {
     height: 4rem;
     width: 3rem;
 }
 
-.menu ul {
+header .menu ul {
     list-style: none;
 }
 
-.menu li {
+header .menu li {
     margin-top: 2rem;
     margin-right: 1.2rem;
 }
 
-.menu li a:hover {
-    margin-right: 1px;
+header .menu li a {
+    color: tomato;
 }
 
-.about_me {
+.menu li button {
+    display: flex;
+    flex-direction: column;
+    background-color: tomato;
+    color: black;
+    width: 5rem;
+    height: 1.2rem;
+    align-items: center;
+}
+
+.sessoes {
+    margin-left: 18dvw;
+}
+
+#home div {
+    display: flex;
+    flex-grow: 2rem;
+}
+
+#home .img_main {
+    display: inline;
+}
+#home .myNameText {
+    font-size: 4rem;
+}
+
+#home .myNameText, #home .myJobText {
+    display: inline;
+    margin: 1rem;
+}
+/*About*/
+#about .about_me {
     display: inline-block;
     width: 25rem;
     height: 10rem;
 }
 
-.sessoes {
-    margin-left: 22dvw;
-}
 
-.tec ul, .tec li, .lista_contato ul, .lista_contato li{
+.about .tec ul, 
+.tec li, 
+.lista_contato ul, 
+.lista_contato li{
     display: flex;
     margin-right: 1.5rem;
     margin-bottom: .8rem;
     list-style: none;
     font-family: monospace;
-    color: black;    
     font-weight: bold;
 }
 
+
+
 li a {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
-li a:hover {
+.tec a:hover {
     margin-left: 2px;
 }
 
 .img_main {
-    display: flex;
-    justify-content: center;
+    display: block;
     margin-top: 28px;
 }
 
-img {
-    border-radius: 15%;
-}
 
 a {
     font-size: 1rem;
@@ -97,16 +132,12 @@ a:visited {
     color: black;
 }
 
-a:hover {
-    color: #55cc55;
-}
 
 .tec{
     /* display: inline-block;
     text-align: center; */
     display: grid;
     grid-template-columns: 23dvw 23dvw;
-    grid-gap: 5px;
 }
 
 .tec div {
@@ -128,6 +159,9 @@ li img {
     height: 2.5rem;
 }
 
+#experiencia div {
+    width: 60dvw;
+}
 footer {
     color: white;
 }

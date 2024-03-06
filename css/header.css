@@ -1,0 +1,30 @@
+header {
+    position: fixed;
+    top: 10rem;
+    right: 0;
+    height: 100%;
+}
+
+.icone {
+    position: fixed;
+    top: 0;
+    left: 91dvw;
+}
+
+.icone img {
+    height: 4rem;
+    width: 3rem;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin-top: 2rem;
+    margin-right: 1.2rem;
+}
+
+.menu li a:hover {
+    margin-right: 1px;
+}

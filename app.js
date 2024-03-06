@@ -1,9 +1,26 @@
-let name = "Lucas de Oliveira"
+const nome = "Lucas de Oliveira";
+const vagaDesejada = "Sou um ambicioso desenvolvedor backend";
+const h1 = document.querySelector(".myNameText");
+const h2 = document.querySelector(".myJobText");
 
-function textoLegal() {
-    setTimeout(() => {
-        for (let index = 0; index < name.length; index++) {
-            document.getElementById("nome").innerHTML += name.charAt(index);
+function textoAnimado() {
+    let index = 0;
+    let index2 = 0;
+    const intervalo = setInterval(() => {
+        if (index < nome.length) {
+            h1.innerHTML += nome[index];
+            index++;
+        } else {
+            clearInterval(intervalo);
         }
-    }, 1000)
+    }, 200)
+    const novoIntervalo = setInterval(() => {
+        if (segundoIndex < vagaDesejada.length) {
+            h2.innerHTML += vagaDesejada[index2];
+            index2++;
+        } else {
+            clearInterval(novoIntervalo)
+        }
+    }, 200)
 }
+window.onload = textoAnimado;
