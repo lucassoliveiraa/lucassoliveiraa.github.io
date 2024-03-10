@@ -2,11 +2,11 @@
 
 * {
     font-family: "Josefin Sans", sans-serif;
-    color: tomato;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
+    margin: 0;
     background-color: whitesmoke;
     /* background-color: floralwhite; */
     color: black;
@@ -14,9 +14,11 @@ body {
 
 h2 {
     font-size: 2.2rem;
+    color: tomato;
 }
 h3 {
     font-size: 1.2rem;
+    color: tomato;
 }
 
 p {
@@ -25,50 +27,38 @@ p {
 
 /*Header*/ 
 header {
-    position: fixed;
-    box-sizing: border-box;
-    top: 10rem;
-    right: 0;
-    height: 100%;
+    background-color: tomato;
+    display: inline-block;
+    height: 10dvh;
+    width: 100%;
 }
 
-header .icone {
-    position: fixed;
-    top: 0;
-    left: 90dvw;
-}
-
-header .icone img {
-    height: 4rem;
-    width: 3rem;
-}
-
-header .menu ul {
+.menu ul { 
+    display: flex;
     list-style: none;
-}
-
-header .menu li {
-    margin-top: 2rem;
-    margin-right: 1.2rem;
-}
-
-header .menu li a {
-    color: tomato;
-}
-
-header .menu_button {
-    border: 2px solid tomato;
-    width: 7rem;
-    padding: 4px;
-    justify-items: center;
+    justify-content: flex-end;
     align-items: center;
-    text-align: center;
 }
 
+.menu li {
+    margin-left: 45px;
+}
+
+.menu li:first-child() .icone {
+
+}
+
+.icone img {
+    width: 45px;
+    height: 45px;
+}
+
+.menu_button {
+
+}
 .menu_button a {
     font-size: 1rem;
 }
-
 .sessoes {
     margin-left: 18dvw;
 }
@@ -76,20 +66,23 @@ header .menu_button {
 /* Home */
 #home div {
     display: flex;
-    flex-grow: 2rem;
+    flex-grow: 1rem;    
+}
+.img_main {
+    height: 50dvh;
 }
 
-#home .img_main {
-    display: inline;
-}
-#home .myNameText {
+
+#home 
+.myNameText {
+    display: block;
     font-size: 4rem;
 }
 
-#home .myNameText, #home .myJobText {
+/* #home .myNameText, #home .myJobText {
     display: inline;
     margin: 1rem;
-}
+} */
 /*About*/
 #about .about_me {
     display: inline-block;
@@ -113,13 +106,13 @@ li a {
     font-size: 1.3rem;
 }
 
-.tec a:hover {
+/* .tec a:hover {
     margin-left: 2px;
-}
+} */
 
 .img_main {
     display: block;
-    margin-top: 28px;
+    margin-top: 5px;
 }
 
 
@@ -142,6 +135,10 @@ a:visited {
 
 .tec div {
     text-align: center;
+}
+
+.tec a:hover {
+    transform: rotateX(3deg);
 }
 .tec ul {
     display: grid;
