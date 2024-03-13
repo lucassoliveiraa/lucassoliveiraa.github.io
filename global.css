@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor-topicos: rgb(255, 99, 71);
+    --fonte-tamanho-h2: 2.2rem;
+    --fonte-tamanho-h3: 1.2rem
+    --fonte-tamanho-p: 1.2rem
+}
+
 body {
     margin: 0;
     background-color: whitesmoke;
@@ -13,16 +20,16 @@ body {
 }
 
 h2 {
-    font-size: 2.2rem;
-    color: tomato;
+    font-size: var(--fonte-tamanho-h2);
+    color: rgb(255, 99, 71);
 }
 h3 {
-    font-size: 1.2rem;
+    font-size: var(--fonte-tamanho-h3);
     color: tomato;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: var(--fonte-tamanho-p);
 }
 
 /*Header*/ 
@@ -44,8 +51,12 @@ header {
     margin-left: 45px;
 }
 
-.menu li:first-child() .icone {
-
+.icone  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .50em;
+    margin-left: .90em;
 }
 
 .icone img {
@@ -175,6 +186,10 @@ li img {
 
 #experiecia h3 {
     margin-bottom: 0;
+}
+
+#experiencia span {
+    font-weight: 300;
 }
 
 /* Footer */
