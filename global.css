@@ -7,9 +7,9 @@
 
 :root {
     --cor-topicos: rgb(255, 99, 71);
-    --fonte-tamanho-h2: 2.2rem;
-    --fonte-tamanho-h3: 1.2rem
-    --fonte-tamanho-p: 1.2rem
+    --fonte-tamanho-h2: 2.2em;
+    --fonte-tamanho-h3: 1.2em;
+    --fonte-tamanho-p: 1.2em;
 }
 
 body {
@@ -23,6 +23,7 @@ h2 {
     font-size: var(--fonte-tamanho-h2);
     color: rgb(255, 99, 71);
 }
+
 h3 {
     font-size: var(--fonte-tamanho-h3);
     color: tomato;
@@ -35,7 +36,8 @@ p {
 /*Header*/ 
 header {
     background-color: tomato;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
     height: 10dvh;
     width: 100%;
 }
@@ -51,12 +53,16 @@ header {
     margin-left: 45px;
 }
 
+.menu li a:hover {
+    color: white;
+}
+
 .icone  {
     position: absolute;
     top: 0;
     left: 0;
     padding: .50em;
-    margin-left: .90em;
+    margin-left: 1.2em;
 }
 
 .icone img {
@@ -64,57 +70,99 @@ header {
     height: 45px;
 }
 
-.menu_button {
+.container-menu-button {
+    display: flex;
+    justify-content: center;
+}
 
+.menu-button {
+    background-color: tomato; 
+    border: none; 
+    color: black;
+    font-weight: bold;
+    padding: 20px 35px 20px 35px; 
+    text-align: center; 
+    display: inline-block; 
+    font-size: 12px; 
+    margin-top: 0;
+    margin: 5px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition-duration: 1.0s; 
 }
-.menu_button a {
-    font-size: 1rem;
+
+.menu-button:hover {
+    border: ridge 1px black;
+    transform: scale(1.2); 
+    transition-duration: 0.5s;
 }
-.sessoes {
-    margin-left: 18dvw;
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;   
+}
+
+.content {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 /* Home */
 #home div {
     display: flex;
-    flex-grow: 1rem;    
-}
-.img_main {
-    height: 50dvh;
+    flex-grow: 1em;    
 }
 
-
-#home 
-.myNameText {
-    display: block;
-    font-size: 4rem;
-}
-
-/* #home .myNameText, #home .myJobText {
-    display: inline;
-    margin: 1rem;
-} */
-/*About*/
-#about .about_me {
-    display: inline-block;
-    width: 25rem;
-    height: 10rem;
-}
-
-.about .tec ul, 
-.tec li, 
-.lista_contato ul, 
-.lista_contato li{
+.home-myNameText {
     display: flex;
-    margin-right: 1.5rem;
-    margin-bottom: .8rem;
-    list-style: none;
-    font-family: monospace;
-    font-weight: bold;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
 }
+
+.myNameText {
+    margin-top: .35em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 5em;
+}
+
+#home h2 {
+    font-size: 28px;
+    margin-top: 2px;
+}
+/*About*/
+#about .about-me {
+    display: inline-block;
+    width: 25em;
+    height: 10em;
+}
+.about-me-content {
+    display: flex;
+}
+
+.img_main {
+    margin-right: 2.5em;
+}
+
+@media ( max-width: 1440px )  {
+    .about .tec ul, 
+    .tec li, 
+    .lista_contato ul, 
+    .lista_contato li {
+        display: flex;
+        margin-right: 1.5em;
+        margin-bottom: .8em;
+        list-style: none;
+        font-family: monospace;
+        font-weight: bold;
+    }
+} 
 
 li a {
-    font-size: 1.3rem;
+    font-size: 1.3em;
 }
 
 /* .tec a:hover {
@@ -122,13 +170,14 @@ li a {
 } */
 
 .img_main {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-top: 5px;
+    margin-bottom: 20px;
 }
 
-
 a {
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: bold;
     text-decoration: none;
 }
@@ -154,17 +203,17 @@ a:visited {
 .tec ul {
     display: grid;
     grid-template-columns: 5em 5em 5em;
-    margin-left: 0.6rem;
+    margin-left: 0.6em;
 }
 
 .tec h3  {
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
 }
 
 li img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.5em;
+    height: 2.5em;
 }
 
 
