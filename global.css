@@ -39,12 +39,20 @@ p {
 /*Header*/ 
 header {
     background-color: var(--cor-primaria);
-    display: flex;
-    justify-content: flex-end;
     height: 10dvh;
     width: 100%;
 }
 
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000; 
+    background-color: var(--cor-primaria);
+}
 .menu ul { 
     position: sticky;
     display: flex;
@@ -54,7 +62,7 @@ header {
 }
 
 .menu li {
-    margin-left: 45px;
+    margin-right: 45px;
 }
 
 .menu li a:hover {
@@ -158,8 +166,16 @@ header {
     width: 174px;
     height: 275px;
 } */
-
-@media ( max-width: 1440px )  {
+.about .tec ul, 
+.tec li, 
+.lista_contato ul, 
+.lista_contato li {
+    display: flex;
+    list-style: none;
+    font-family: monospace;    
+    font-weight: bold;
+}
+@media screen and (min-width: 1100px ) and (max-width: 1440px) {
     .lista_contato a img {
         width: 1.2em;
         height: 1.2em;
@@ -171,11 +187,53 @@ header {
         display: flex;
         margin-right: 1.5em;
         list-style: none;
-        font-family: monospace;
+        font-family: monospace;    
         font-weight: bold;
+    }
+    
+    .tec{
+        display: grid;
+        grid-template-columns: 23vw 23vw;
+        justify-content: center;
+    }
+    
+    .tec div {
+        text-align: center;
+    }
+    
+    .tec ul {
+        display: grid;
+        grid-template-columns: 5em 5em 5em;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    .tec h3 {
+        text-align: center;
+    }
+    li img {
+        width: 2em;
+        max-width: 100%;
     }
 } 
 
+@media screen and (max-width: 900px) {
+    .tec {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Reduzindo a largura dos itens */
+    }
+
+    .tec ul {
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)); /* Reduzindo a largura dos itens */
+    }
+
+    .tec h3 {
+        font-size: 1.2em; /* Reduzindo o tamanho do texto */
+    }
+    li img {
+        width: 25%;
+        max-width: 50%;
+    }
+}
 li a {
     font-size: 1.3em;
 }
@@ -195,39 +253,8 @@ a {
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
-}
-
-a:visited {
     color: black;
 }
-
-.tec{
-    /* display: inline-block;
-    text-align: center; */
-    display: grid;
-    grid-template-columns: 23dvw 23dvw;
-}
-
-.tec div {
-    text-align: center;
-}
-
-.tec a:hover {
-    transform: rotateX(3deg);
-}
-.tec ul {
-    display: grid;
-    grid-template-columns: 5em 5em 5em;
-    margin-left: 0.6em;
-}
-.tec h3 {
-    text-align: center;
-}
-li img {
-    width: 2.1em;
-    height: 2.1em;
-}
-
 
 /* Experiencia */
 #experiencia div {
@@ -257,6 +284,7 @@ li img {
     display: flex;
     justify-content: center;
 }
+
 /* Footer */
 #footer {
     display: flex;
@@ -267,5 +295,5 @@ li img {
 }
 
 #footer p {
-    margin: 5px 0;
+    margin: 2px 0;
 }
