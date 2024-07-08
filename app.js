@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const nome = "Lucas de Oliveira";
     const h1 = document.querySelector(".myNameText");
-    const h2 = document.querySelector(".myJobText");
 
     let index = 0;
     const intervalo = setInterval(() => {
