@@ -275,8 +275,8 @@ a img {
         padding: 1rem;
     }
 
-    #formacao {
-        font-size: ;
+    #formacao p{
+        font-size: calc(.3em + 1vw);
     }
     .lista_contato ul{
         display: flex;
@@ -346,7 +346,7 @@ a img {
     }
 
     a img {
-        width: 5.5vw;
-        height: 5.5vh;
+        width: 5.0vw;
+        height: 5.0vh;
     }
 }
