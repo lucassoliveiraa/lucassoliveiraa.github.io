@@ -197,7 +197,7 @@ a img {
 }
 
 
-@media (min-width: 768px)  {
+@media (min-width: 600px)  {
     p {
         font-size: var(--fonte-tamanho-pg);
     } 
@@ -222,6 +222,8 @@ a img {
         align-items: center;
         justify-content: space-around;
         width: 100%;
+        min-width: 100vw;
+        position: fixed;
         height: 100%;
     }
     
@@ -348,5 +350,12 @@ a img {
     a img {
         width: 5.0vw;
         height: 5.0vh;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+    .sidebar {
+        /* Ajuste a largura da sidebar para o modo paisagem, se necessário */
+        width: 30%; /* Ajuste conforme o design desejado */
     }
 }
