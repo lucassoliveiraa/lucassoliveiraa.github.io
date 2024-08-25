@@ -10,12 +10,13 @@
     --cor-primaria: #67BB67;
     --cor-destaque: #3A606E;
     --cor-destaque1: #5E4C5A;
-    --fonte-tamanho-h2: 1.3em;
-    --fonte-tamanho-h3: 1.1em;
-    --fonte-tamanho-h4: 0.9em;
-    --fonte-tamanho-p: 0.6em;
-    --fonte-tamanho-pg: 0.9em;
-    --fonte-tamanho-g: 1.2em;
+    --fonte-tamanho-h1: 2.5em;
+    --fonte-tamanho-h2: 1.8em;
+    --fonte-tamanho-h3: 1.4em;
+    --fonte-tamanho-h4: 1.2em;
+    --fonte-tamanho-p: 1em;
+    --fonte-tamanho-pg: 1.2em;
+    --fonte-tamanho-g: 1.4em;
 }
 
 body, html {
@@ -28,6 +29,7 @@ body, html {
 }
 h1 {
     color: var(--cor-destaque);
+    font-size: var(--fonte-tamanho-h1);
 }
 h2 {
     font-size: var(--fonte-tamanho-h2);
@@ -81,7 +83,13 @@ header {
 }
 
 #home {
+    margin-top: 4vh;
     width: 100%;
+}
+
+#home div *{
+    padding: 0;
+    margin: 0;
 }
 ul {
     display: flex;
@@ -95,10 +103,6 @@ a img {
     height: 4vh;
 }
 
-/* About */
-.about-me {
-    text-align: justify;
-}
 
 /* Tec */
 #tec {
@@ -111,11 +115,10 @@ a img {
     width: 100%;
 }
 
-
-.tec-content div ul{
-    display: flex;
+.tec-content ul {
+    justify-content: first baseline;
     flex-wrap: wrap;
-    gap: 5vw;
+    gap: 2vw;
 }
 
 /* Experiencia */
@@ -219,31 +222,35 @@ a img {
         align-items: center;
         justify-content: space-around;
         width: 100%;
+        height: 100%;
     }
     
-    .menu ul {
+    .sidebar ul {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         padding: 0;
         margin: 0;
     }
-    .menu li {
+
+    .sidebar li {
         width: 100%;
         text-align: center;
         margin: 1rem 0;
+        
     }
     
-    .menu li a {
+    .sidebar li a {
         display: block;
         text-align: center; 
         padding:1rem 0; 
         text-decoration: none;
         color: white;
         width: 100%;
+        font-size: calc(.1em + 1vw);
     }
 
-    .menu li a:hover {
+    .sidebar li a:hover {
         color:var(--cor-destaque);
     }
     
@@ -268,6 +275,9 @@ a img {
         padding: 1rem;
     }
 
+    #formacao {
+        font-size: ;
+    }
     .lista_contato ul{
         display: flex;
         padding: 0;
@@ -277,8 +287,8 @@ a img {
     }
     
     a img {
-        width: 2.5vw;
-        height: 2.5vh;
+        width: 6vw;
+        height: 6vh;
     }
 }
     
