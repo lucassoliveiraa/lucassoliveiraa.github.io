@@ -8,13 +8,14 @@
 :root {
     --cor-background: #FFFFFF;
     --cor-primaria: #67BB67;
-    --cor-destaque: #EE4E4E;
+    --cor-destaque: #3A606E;
     --cor-destaque1: #5E4C5A;
     --fonte-tamanho-h2: 1.3em;
     --fonte-tamanho-h3: 1.1em;
     --fonte-tamanho-h4: 0.9em;
-    --fonte-tamanho-p: 0.7em;
-
+    --fonte-tamanho-p: 0.6em;
+    --fonte-tamanho-pg: 0.9em;
+    --fonte-tamanho-g: 1.2em;
 }
 
 body, html {
@@ -45,6 +46,7 @@ h4 {
 
 p {
     font-size: var(--fonte-tamanho-p);
+    text-align: justify;
 }
 
 span {
@@ -83,15 +85,14 @@ header {
 }
 ul {
     display: flex;
-    gap: 2em;
     flex-wrap: wrap;
 }
 li {
     list-style: none;
 }
 a img {
-    width: 2em;
-    height: 2em;
+    width: 4vw;
+    height: 4vh;
 }
 
 /* About */
@@ -113,7 +114,8 @@ a img {
 
 .tec-content div ul{
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 5vw;
 }
 
 /* Experiencia */
@@ -124,10 +126,10 @@ a img {
     display: flex;
     flex-direction: column;
 }
+
 .itens_experiencia {
     width: 100%;
 }
-
 
 .primeiro_item {
     display: flex;
@@ -137,28 +139,45 @@ a img {
     margin: 0;
 }
 
+.primeiro_item {
+    margin:0;
+}
 .primeiro_item h3 {
     padding: 0;
     margin: 0;
 }
 
-
+.primeiro_item ul li p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 .primeiro_item ul li > div ul {
-    padding-left: 1.5vw;
-    margin-left: 1.5vw;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .primeiro_item div ul {
-    margin-top: .2vh;
+    margin: 0;
 }
 
 .primeiro_item div ul li {
     list-style: circle;
 }
 
-#contato .lista_contato{
+
+#formacao {
+    width: 100%;
+}
+#contato {
     display: flex;
-    justify-content: center;
+}
+
+.lista_contato ul{
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5vw;
 }
 
 /* Footer */
@@ -175,65 +194,69 @@ a img {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px)  {
+    p {
+        font-size: var(--fonte-tamanho-pg);
+    } 
     .menu {
         position: fixed;
         top: 0;
         left: 0;
         width: 20%;
         height: 100%;
-        background-color: #333;
-        overflow: hidden;
         background-color: var(--cor-primaria);
         display: flex;
         flex-direction: column;
         align-items: center; /* Centraliza os itens horizontalmente */
-        justify-content: center;
+        justify-content: space-evenly;
         box-sizing: border-box;
-        padding: 1rem;
+        padding: 2rem 0;
     }
     
     .sidebar {
-        height: 50%;
-    }
-    .menu ul { 
         display: flex;
         flex-direction: column;
-        list-style: none;
+        align-items: center;
+        justify-content: space-around;
         width: 100%;
-        height: 50%;
-        justify-content: space-between;
-        align-content: center;
+    }
+    
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         padding: 0;
         margin: 0;
     }
-    
     .menu li {
         width: 100%;
-        height: 50%;
+        text-align: center;
+        margin: 1rem 0;
     }
     
     .menu li a {
         display: block;
         text-align: center; 
-        padding: 2rem; 
+        padding:1rem 0; 
         text-decoration: none;
-        width: 100%; 
+        color: white;
+        width: 100%;
     }
+
     .menu li a:hover {
-        color:var(--cor-background);
+        color:var(--cor-destaque);
     }
     
-    .menu .foto-perfil {
-        width: 9em; 
-        height: 9em;
-        border-radius: 50%; /* Torna a imagem circular */
-        object-fit: cover; /* Garante que a imagem cubra totalmente o contêiner */
-        margin-bottom: 1rem; /* Adiciona espaço abaixo da foto */
-        display: flex;
-        align-self: center; /* Centraliza a foto horizontalmente */
-    }  
+    .foto-perfil {
+        width: 14vw;
+        height: 14vw; /* Mantém a proporção da imagem */
+        border-radius: 50%; 
+        margin-bottom: 1rem; /* Espaçamento abaixo da imagem */
+        padding: 0;
+        object-fit: cover;
+    }
 
+    
     .content {
         display: flex;
         flex-direction: column;
@@ -245,63 +268,31 @@ a img {
         padding: 1rem;
     }
 
-    #home {
-        width: 100%;
-    }
-    ul {
+    .lista_contato ul{
         display: flex;
-        flex-wrap: wrap;
-        gap: 0.5em;
+        padding: 0;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5vw;
     }
-    li {
-        list-style: none;
-    }
-
-    li p {
-        margin: 0.1vh;
-    }
-
+    
     a img {
-        width: 2em;
-        height: 2em;
+        width: 2.5vw;
+        height: 2.5vh;
     }
+}
     
-    
-    /* About */
-    .about-me {
-        text-align: justify;
-    }
-    
-    /* Tec */
-    #tec {
-        display: flex;
-        width: 100%;
-    }
-    .tec-content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    
-    .tec-content div ul{
-        display: flex;
-    }
-    
-    /* Experiencia */
-    #experiencia {
-        width: 100%;
-    }
-    #experiencia ul{
-        display: flex;
-        flex-direction: column;
-    }
 
+
+@media (min-width : 1024px) {
+    p {
+        font-size: var(--fonte-tamanho-g);
+    } 
     .itens_experiencia {
         width: 100%;
     }
-    
-    
+
+
     .primeiro_item {
         display: flex;
         flex-direction: column;
@@ -309,7 +300,7 @@ a img {
         padding: 0;
         margin: 0;
     }
-    
+
     .primeiro_item {
         margin:0;
     }
@@ -317,7 +308,7 @@ a img {
         padding: 0;
         margin: 0;
     }
-    
+
     .primeiro_item ul li p{
         margin-bottom: 0;
         padding-bottom: 0;
@@ -326,35 +317,26 @@ a img {
         padding-left: 0;
         margin-left: 0;
     }
-    
+
     .primeiro_item div ul {
         margin: 0;
     }
-    
-    .primeiro_item div ul li {
-        list-style: circle;
-    }
-    
-    
-    #contato .lista_contato{
+
+
+    #contato {
         display: flex;
-        justify-content: center;
     }
-    
-    /* Footer */
-    #footer {
+
+    .lista_contato ul{
         display: flex;
-        width: 100%;
-        flex-direction: column;
+        padding: 0;
+        justify-content: space-around;
         align-items: center;
-        color: var(--cor-primaria);
+        gap: 5vw;
     }
-    
-    #footer p {
-        margin: 2px 0;
+
+    a img {
+        width: 5.5vw;
+        height: 5.5vh;
     }
-}
-
-@media (min-width : 1024px) {
-
 }
