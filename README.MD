@@ -139,20 +139,18 @@ header {
 }
 
 ```
-### **A página é divida nas seguintes seções:** 
-- ### **Home**
-    • Uma breve apresentação sobre mim.
+**A página é divida nas seguintes seções:** 
 
-- ### **Sobre**
-    • Aqui você encontrará um texto falando um pouco sobre mim e as tecnologias que já utilizei.
+- **Home:** Uma breve apresentação sobre mim.
 
-- ### **Experiência**
+- **Sobre:** Um texto falando um pouco sobre mim e as tecnologias que já utilizei.
 
-- ### **Formação**
+- **Experiência:** Experiências no geral.
 
-- ### **Contato**
+- **Formação:** Formação acadêmica e notas.
 
-- ### **Footer**
+- **Contato:** Links para encontrar meus projetos e/ou comunicar-se comigo.
+
 
 • Como estou utilizando a abordagem mobile first, a media query é responsável por ajustar o layout para **tamanhos de tablet.**
 
@@ -264,3 +262,12 @@ media (min-width: 768px)  {
 ## Conclusão
 
 Este é o meu portfólio. Nele, você encontrará informações sobre quem sou, meus objetivos, conhecimentos adquiridos, interesses, experiência e detalhes para contato.
+
+## Dados do Autor
+• **Nome:** Lucas Silva de Oliveira
+
+• **Faculdade:** Instituto Federal de Educação, Ciência e Tecnologia Baiano - Campus Itapetinga
+
+• **Email:** 20211ITA01GB0001@alunos.ifbaiano.edu.br
+
+• **Matrícula:** 20211ITA01GB0001
