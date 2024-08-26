@@ -22,7 +22,7 @@ O primeiro passo no desenvolvimento foi a definição das **propriedades globais
 
 ```
 
-- Aqui estão as **as variáveis globais** da página.
+• Aqui estão as **as variáveis globais** da página.
 ```css
 :root {
     --cor-background: #FFFFFF;
@@ -79,7 +79,7 @@ header {
 
 ```
 
-- Em seguida, definimos o contêiner que abrigará o menu de navegação e o conteúdo da página. Como seguimos a abordagem **mobile first**, o menu **não será exibido** em telas com dimensões típicas de smartphones.
+• Em seguida, definimos o contêiner que abrigará o menu de navegação e o conteúdo da página. Como seguimos a abordagem **mobile first**, o menu **não será exibido** em telas com dimensões típicas de smartphones.
 
 
 ```css
@@ -110,7 +110,7 @@ header {
 }
 ```
 
-- Com o **menu**, ficará da seguinte forma:
+• Com o **menu**, ficará da seguinte forma:
 
 ```css
 .menu {
@@ -139,25 +139,22 @@ header {
 }
 
 ```
-- **A página é divida nas seguintes seções:** 
+### **A página é divida nas seguintes seções:** 
+- ### **Home**
+    • Uma breve apresentação sobre mim.
 
+- ### **Sobre**
+    • Aqui você encontrará um texto falando um pouco sobre mim e as tecnologias que já utilizei.
 
-### **Home**
+- ### **Experiência**
 
-- Uma breve apresentação sobre mim.
+- ### **Formação**
 
-### **Sobre**
-- Aqui você encontrará um texto falando um pouco sobre mim e as tecnologias que já utilizei.
+- ### **Contato**
 
-### **Experiência**
+- ### **Footer**
 
-### **Formação**
-
-### **Contato**
-
-### **Footer**
-
-- Como estou utilizando a abordagem mobile first, a media query é responsável por ajustar o layout para **tamanhos de tablet.**
+• Como estou utilizando a abordagem mobile first, a media query é responsável por ajustar o layout para **tamanhos de tablet.**
 
 
 ```css
@@ -247,7 +244,7 @@ media (min-width: 768px)  {
 }
 ```
 
-- Para resoluções com **largura miníma de 1028px**.
+• Para resoluções com **largura miníma de 1028px**.
 
 ```css
 @media (min-width : 1024px) {
