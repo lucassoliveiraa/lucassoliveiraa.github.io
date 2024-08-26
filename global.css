@@ -10,10 +10,10 @@
     --cor-primaria: #67BB67;
     --cor-destaque: #3A606E;
     --cor-destaque1: #5E4C5A;
-    --fonte-tamanho-h1: 2.5em;
-    --fonte-tamanho-h2: 1.8em;
-    --fonte-tamanho-h3: 1.4em;
-    --fonte-tamanho-h4: 1.2em;
+    --fonte-tamanho-h1: 2.4em;
+    --fonte-tamanho-h2: 2em;
+    --fonte-tamanho-h3: 1.6em;
+    --fonte-tamanho-h4: 1.5em;
     --fonte-tamanho-p: 1em;
     --fonte-tamanho-pg: 1.2em;
     --fonte-tamanho-g: 1.4em;
@@ -80,6 +80,8 @@ header {
     box-sizing: border-box;
     align-items: center;
     margin-right: 10%;
+    padding: 1rem;
+    
 }
 
 #home {
@@ -125,15 +127,25 @@ a img {
 /* Experiencia */
 #experiencia {
     width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+
+#experiencia h2 {
+    margin-bottom: 0;
 }
 
 #experiencia ul{
     display: flex;
     flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .itens_experiencia {
     width: 100%;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 .primeiro_item {
@@ -144,38 +156,55 @@ a img {
     margin: 0;
 }
 
-.primeiro_item {
-    margin:0;
+.primeiro_item ul {
+    margin-top: 0;
 }
+
 .primeiro_item h3 {
     padding: 0;
-    margin: 0;
+    margin-bottom: 0;
+}
+
+.primeiro_item h4 {
+    padding: 0;
+    margin-bottom: .5vh;
 }
 
 .primeiro_item ul li p{
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
 .primeiro_item ul li > div ul {
     padding-left: 0;
     margin-left: 0;
-}
-
-.primeiro_item div ul {
-    margin: 0;
 }
 
 .primeiro_item div ul li {
     list-style: circle;
 }
 
-
 #formacao {
     width: 100%;
 }
+#formacao p{
+    font-size: calc(.3em + 1vw);
+}
+
 #contato {
     display: flex;
+    width: 100%;
+    justify-content: center;
 }
+
+.lista_contato ul{
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5vw;
+}
+
 
 .lista_contato ul{
     display: flex;
@@ -277,9 +306,6 @@ a img {
 
     
     .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         flex: 1;
         margin-left: 20%;
         box-sizing: border-box;
@@ -287,58 +313,6 @@ a img {
         padding: 1rem;
     }
 
-    #formacao p{
-        font-size: calc(.3em + 1vw);
-    }
-
-    .itens_experiencia {
-        width: 100%;
-    }
-
-
-    .primeiro_item {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-
-    .primeiro_item {
-        margin:0;
-    }
-    .primeiro_item h3 {
-        padding: 0;
-        margin: 0;
-    }
-
-    .primeiro_item ul li p{
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    .primeiro_item ul li > div ul {
-        padding-left: 0;
-        margin-left: 0;
-    }
-
-    .primeiro_item div ul {
-        margin: 0;
-    }
-
-
-    #contato {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .lista_contato ul{
-        display: flex;
-        padding: 0;
-        justify-content: space-around;
-        align-items: center;
-        gap: 5vw;
-    }
     
     a img {
         width: 6vw;
