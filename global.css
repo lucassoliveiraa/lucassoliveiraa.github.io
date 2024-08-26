@@ -98,9 +98,10 @@ ul {
 li {
     list-style: none;
 }
+
 a img {
-    width: 4vw;
-    height: 4vh;
+    width: 8vw;
+    height: 8vh;
 }
 
 
@@ -116,15 +117,16 @@ a img {
 }
 
 .tec-content ul {
-    justify-content: first baseline;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 2vw;
+    gap: 4vw;
 }
 
 /* Experiencia */
 #experiencia {
     width: 100%;
 }
+
 #experiencia ul{
     display: flex;
     flex-direction: column;
@@ -183,6 +185,11 @@ a img {
     gap: 5vw;
 }
 
+.lista_contato img {
+    width: 3vw;
+    height: 3vh;
+}
+
 /* Footer */
 #footer {
     display: flex;
@@ -193,11 +200,12 @@ a img {
 }
 
 #footer p {
-    margin: 2px 0;
+    font-size: calc(.6em + .6vw);
+    margin: 1px;
 }
 
 
-@media (min-width: 600px)  {
+@media (min-width: 768px)  {
     p {
         font-size: var(--fonte-tamanho-pg);
     } 
@@ -214,6 +222,7 @@ a img {
         justify-content: space-evenly;
         box-sizing: border-box;
         padding: 2rem 0;
+        z-index: 10;
     }
     
     .sidebar {
@@ -222,8 +231,7 @@ a img {
         align-items: center;
         justify-content: space-around;
         width: 100%;
-        min-width: 100vw;
-        position: fixed;
+        position: relative;
         height: 100%;
     }
     
@@ -263,6 +271,8 @@ a img {
         margin-bottom: 1rem; /* Espaçamento abaixo da imagem */
         padding: 0;
         object-fit: cover;
+        max-width: 150px;
+        max-height: 150px;
     }
 
     
@@ -270,7 +280,7 @@ a img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        flex: 1;
         margin-left: 20%;
         box-sizing: border-box;
         align-items: center;
@@ -280,26 +290,7 @@ a img {
     #formacao p{
         font-size: calc(.3em + 1vw);
     }
-    .lista_contato ul{
-        display: flex;
-        padding: 0;
-        justify-content: space-around;
-        align-items: center;
-        gap: 5vw;
-    }
-    
-    a img {
-        width: 6vw;
-        height: 6vh;
-    }
-}
-    
 
-
-@media (min-width : 1024px) {
-    p {
-        font-size: var(--fonte-tamanho-g);
-    } 
     .itens_experiencia {
         width: 100%;
     }
@@ -337,6 +328,8 @@ a img {
 
     #contato {
         display: flex;
+        width: 100%;
+        justify-content: center;
     }
 
     .lista_contato ul{
@@ -346,16 +339,23 @@ a img {
         align-items: center;
         gap: 5vw;
     }
-
+    
     a img {
-        width: 5.0vw;
-        height: 5.0vh;
+        width: 6vw;
+        height: 6vh;
     }
 }
+    
 
-@media (orientation: landscape) and (min-width: 768px) {
-    .sidebar {
-        /* Ajuste a largura da sidebar para o modo paisagem, se necessário */
-        width: 30%; /* Ajuste conforme o design desejado */
+
+@media (min-width : 1024px) {
+    p {
+        font-size: var(--fonte-tamanho-g);
+    } 
+    
+
+    a img {
+        width: 5vw;
+        height: 5vh;
     }
 }
