@@ -13,10 +13,10 @@
     --fonte-tamanho-h1: 2.4em;
     --fonte-tamanho-h2: 2em;
     --fonte-tamanho-h3: 1.6em;
-    --fonte-tamanho-h4: 1.5em;
+    --fonte-tamanho-h4: 1.3em;
     --fonte-tamanho-p: 1em;
-    --fonte-tamanho-pg: 1.2em;
-    --fonte-tamanho-g: 1.4em;
+    --fonte-tamanho-pg: 1.1em;
+    --fonte-tamanho-g: 1.2em;
 }
 
 body, html {
@@ -191,20 +191,23 @@ a img {
     font-size: calc(.3em + 1vw);
 }
 
+.itens_formacao {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5vh;
+}
+
+.itens_formacao h4{
+    margin-bottom: 0;
+    margin-top: 2vh;
+}
 #contato {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-
-.lista_contato ul{
-    display: flex;
-    padding: 0;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5vw;
-}
-
 
 .lista_contato ul{
     display: flex;
