@@ -3,7 +3,7 @@
 Portfólio criado para a disciplina de Desenvolvimento Web do curso de Sistemas de Informação do Instituto Federal de Educação, Ciência e Tecnologia Baiano.
 
 
-### **Estrutura da Página**
+## **Estrutura da Página**
 
 A página foi inicialmente planejada com base em um protótipo, que pode ser visualizado abaixo:
 ![prototipo](assets/photos/prototipo_figma.png)
@@ -142,20 +142,20 @@ header {
 - **A página é divida nas seguintes seções:** 
 
 
-<span style="background-color: #67BB67; color: white;">Home</span>
+### **Home**
 
-Uma breve apresentação sobre mim.
+- Uma breve apresentação sobre mim.
 
-<span style="background-color: #67BB67; color: white;">Sobre</span>
+### **Sobre**
 - Aqui você encontrará um texto falando um pouco sobre mim e as tecnologias que já utilizei.
 
-<span style="background-color: #67BB67; color: white;">Experiência</span>
+### **Experiência**
 
-<span style="background-color: #67BB67; color: white;">Formação</span>
+### **Formação**
 
-<span style="background-color: #67BB67; color: white;">Contato</span>
+### **Contato**
 
-<span style="background-color: #67BB67; color: white;">Footer</span>
+### **Footer**
 
 - Como estou utilizando a abordagem mobile first, a media query é responsável por ajustar o layout para **tamanhos de tablet.**
 
@@ -264,6 +264,6 @@ media (min-width: 768px)  {
 
 ```
 
-### Conclusão
+## Conclusão
 
 Este é o meu portfólio. Nele, você encontrará informações sobre quem sou, meus objetivos, conhecimentos adquiridos, interesses, experiência e detalhes para contato.
