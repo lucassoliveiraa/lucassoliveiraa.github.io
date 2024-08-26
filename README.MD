@@ -3,17 +3,14 @@
 Portfólio criado para a disciplina de Desenvolvimento Web do curso de Sistemas de Informação do Instituto Federal de Educação, Ciência e Tecnologia Baiano.
 
 
-### Estrutura da Página
+### **Estrutura da Página**
 
-Inicialmente, foi desenvolvido um protótipo que está disponível abaixo:
-
+A página foi inicialmente planejada com base em um protótipo, que pode ser visualizado abaixo:
 ![prototipo](assets/photos/prototipo_figma.png)
 
-A página é divido em dois espaços, sendo mais a esquerda um menu tendo os links para as seções da mesma e o contéudo e seções da pagina no restante do espaço. Em sua construção foi utilizado o conceito de mobile first, ou seja, primeiro pensamos no mobile e depois vamos ajustando a proporções para tablet e computadores/televisões, garantindo assim a responsividade do mesmo.
+A estrutura da página é dividida em duas áreas principais: à esquerda, um menu de navegação com links para as diferentes seções; à direita, o conteúdo correspondente a essas seções. O desenvolvimento seguiu a abordagem mobile first, priorizando a otimização para dispositivos móveis antes de ajustar o design para tablets, desktops e televisores, assegurando assim a responsividade em todas as telas.
 
-Primeiramente definimos as propriedades globais e variáveis que estão na raiz do nosso projeto.
-
-Código Primário:
+O primeiro passo no desenvolvimento foi a definição das **propriedades globais do nosso projeto.**
 
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
@@ -23,6 +20,10 @@ Código Primário:
     box-sizing: border-box;
 }
 
+```
+
+- Aqui estão as **as variáveis globais** da página.
+```css
 :root {
     --cor-background: #FFFFFF;
     --cor-primaria: #67BB67;
@@ -72,17 +73,14 @@ p {
 span {
     font-weight: 300;
 }
-/*Header*/ 
 header {
     background-color: var(--cor-primaria);
 }
 
 ```
 
+- Em seguida, definimos o contêiner que abrigará o menu de navegação e o conteúdo da página. Como seguimos a abordagem **mobile first**, o menu **não será exibido** em telas com dimensões típicas de smartphones.
 
-Depois definimos o container que abrigara o menu de navegação e o contéudo da página. Sendo que como utilizamos a abordagem mobile first, quando a dimensão for proporiconal a de um smartphone não haverá menu.
-
-Código:
 
 ```css
 
@@ -112,7 +110,7 @@ Código:
 }
 ```
 
-Com menu ficará assim:
+- Com o **menu**, ficará da seguinte forma:
 
 ```css
 .menu {
@@ -141,21 +139,131 @@ Com menu ficará assim:
 }
 
 ```
-A página é divida com as seguintes seções 
+- **A página é divida nas seguintes seções:** 
 
 
-`home`
+<span style="background-color: #67BB67; color: white;">Home</span>
 
-`sobre`
+Uma breve apresentação sobre mim.
 
-`experiencia`
+<span style="background-color: #67BB67; color: white;">Sobre</span>
+- Aqui você encontrará um texto falando um pouco sobre mim e as tecnologias que já utilizei.
 
-`formacao`
+<span style="background-color: #67BB67; color: white;">Experiência</span>
 
-`contato`
+<span style="background-color: #67BB67; color: white;">Formação</span>
 
-`footer`
+<span style="background-color: #67BB67; color: white;">Contato</span>
+
+<span style="background-color: #67BB67; color: white;">Footer</span>
+
+- Como estou utilizando a abordagem mobile first, a media query é responsável por ajustar o layout para **tamanhos de tablet.**
 
 
+```css
+media (min-width: 768px)  {
+    p {
+        font-size: var(--fonte-tamanho-pg);
+    } 
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        background-color: var(--cor-primaria);
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        padding: 2rem 0;
+    }
+    
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+    
+    .sidebar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
 
+    .sidebar li {
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+        
+    }
+    
+    .sidebar li a {
+        display: block;
+        text-align: center; 
+        padding:1rem 0; 
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        font-size: calc(.1em + 1vw);
+    }
 
+    .sidebar li a:hover {
+        color:var(--cor-destaque);
+    }
+    
+    .foto-perfil {
+        width: 14vw;
+        height: 14vw; 
+        border-radius: 50%; 
+        margin-bottom: 1rem; 
+        padding: 0;
+        object-fit: cover;
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    
+    .conteudo {
+        flex: 1;
+        margin-left: 20%;
+        box-sizing: border-box;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    
+    a img {
+        width: 6vw;
+        height: 6vh;
+    }
+}
+```
+
+- Para resoluções com **largura miníma de 1028px**.
+
+```css
+@media (min-width : 1024px) {
+    p {
+        font-size: var(--fonte-tamanho-g);
+    } 
+    
+
+    a img {
+        width: 5vw;
+        height: 5vh;
+    }
+}
+
+```
+
+### Conclusão
+
+Este é o meu portfólio. Nele, você encontrará informações sobre quem sou, meus objetivos, conhecimentos adquiridos, interesses, experiência e detalhes para contato.

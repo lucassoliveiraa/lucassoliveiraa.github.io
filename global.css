@@ -28,6 +28,7 @@ body, html {
     color: black;
     overflow-x: hidden;
 }
+
 h1 {
     color: var(--cor-destaque);
     font-size: var(--fonte-tamanho-h1);
