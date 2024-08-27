@@ -239,7 +239,7 @@ a img {
 }
 
 
-@media (min-width: 768px)  {
+@media (min-width: 700px)  {
     p {
         font-size: var(--fonte-tamanho-pg);
     } 
@@ -335,5 +335,25 @@ a img {
     a img {
         width: 5vw;
         height: 5vh;
+    }
+}
+
+
+@media (max-width: 768px) and (min-height: 320px) and (orientation: landscape) {
+    .menu {
+        display: none;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-left: 10%;
+        box-sizing: border-box;
+        align-items: center;
+        margin-right: 10%;
+        padding: 1rem;
+        
     }
 }
