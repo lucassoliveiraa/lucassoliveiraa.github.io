@@ -239,7 +239,7 @@ a img {
 }
 
 
-@media (min-width: 700px)  {
+@media (min-width: 768px)  {
     p {
         font-size: var(--fonte-tamanho-pg);
     } 
